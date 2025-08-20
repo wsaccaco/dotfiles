@@ -10,7 +10,7 @@ Este repositorio contiene mi configuración personal para macOS, incluyendo **Zs
 Clona este repositorio en tu **home**:
 
 ```bash
-git clone https://github.com/tu-usuario/dotfiles.git ~/dotfiles
+git clone https://github.com/wsaccaco/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 chmod +x install.sh
 ./install.sh
