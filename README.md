@@ -1,6 +1,6 @@
-# dotfiles
+# Dotfiles 
 
-# 🌟 Dotfiles de Waldo
+# 🌟 Dotfiles de wsaccaco
 
 Este repositorio contiene mi configuración personal para macOS, incluyendo **Zsh**, **Vim**, **Starship**, **Oh My Zsh** y todas las herramientas que utilizo en mi entorno de desarrollo diario.  
 
@@ -14,5 +14,3 @@ git clone https://github.com/tu-usuario/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 chmod +x install.sh
 ./install.sh
-
-
