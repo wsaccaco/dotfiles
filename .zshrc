@@ -110,3 +110,8 @@ if [ -f ~/dotfiles/aliases.zsh ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+
+
+

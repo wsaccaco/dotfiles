@@ -32,8 +32,25 @@ echo "📄 Configurando aliases..."
 mkdir -p "$HOME/.oh-my-zsh/custom"
 ln -sf "$DOTFILES/aliases.zsh" "$HOME/.oh-my-zsh/custom/aliases.zsh"
 
+echo "🔌 Instalando plugins de Zsh..."
+ZSH_CUSTOM=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
+
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
+  echo "  -> Clonando zsh-autosuggestions..."
+  git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+else
+  echo "  ✅ zsh-autosuggestions ya está instalado"
+fi
+
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
+  echo "  -> Clonando zsh-syntax-highlighting..."
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
+else
+  echo "  ✅ zsh-syntax-highlighting ya está instalado"
+fi
+
 echo "⚡ Recargando configuración de Zsh..."
-source "$HOME/.zshrc"
+#source "$HOME/.zshrc"
 
 echo "🎉 Setup completado con éxito."
 
